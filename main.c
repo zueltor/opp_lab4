@@ -148,7 +148,7 @@ int main(int argc, char **argv) {
     double *prev_phi = (double *) malloc(sizeof(double) * Nx * Ny * Nz);
     init_matrix(current_phi, prev_phi);
     int i = 0;
-    double delta = 0;;
+    double delta = 0;
 
     do {
         delta = next_phi(current_phi, prev_phi);
